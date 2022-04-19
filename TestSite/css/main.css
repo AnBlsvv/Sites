@@ -1,0 +1,348 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+
+/* =Reset
+-------------------------------------------------------------- */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    word-wrap:break-word;
+}
+ 
+html {
+    font-size: 62.5%;
+    /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll;
+    /* Keeps page centered in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%;
+    /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%;
+    /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+ 
+*,
+*:before,
+*:after {
+    /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    -webkit-box-sizing: border-box;
+    /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+    -moz-box-sizing: border-box;
+    /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+    box-sizing: border-box;
+}
+ 
+ol,
+ul {
+    list-style: none;
+}
+ 
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+ 
+caption,
+th,
+td {
+    font-weight: normal;
+    text-align: left;
+}
+ 
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+}
+ 
+blockquote,
+q {
+    quotes: "" "";
+}
+ 
+a:focus {
+    outline: 0;
+}
+ 
+a:hover,
+a:active {
+    outline: 0;
+}
+ 
+a img {
+    border: 0;
+}
+ 
+/* =END Reset
+-------------------------------------------------------------- */
+
+html,body {
+	height: 100%;
+}
+
+body {
+	background: #F4F4F4;
+	padding: 0;
+	margin: 0;
+}
+
+.main-part{
+	margin-right: auto;
+	margin-left: auto;
+	width: 1212px;
+	height: 710px;
+	background-color: #080E73;
+	border-radius: 15px;
+}
+
+/* Our Services */
+h1{
+	color: #FFFFFF; 
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 110%;
+	width: 265px;
+	height: 44px;
+	text-align: center;
+	align-items: center;
+	border-left: 7px solid #FF5F1F; /* Параметры линии */ 
+    padding-left: 10px; /* Расстояние от линии до текста */
+}
+
+/* Description */
+p{
+	color: #FFFFFF; 
+	font-family: 'Hind', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 140%;
+	font-feature-settings: 'pnum' on, 'lnum' on;
+	margin-top: 35px;
+	margin-bottom: 50px;
+	width: 540px;
+	height: 150px;
+	float: left;
+	padding-right: 20px;
+}
+
+/* Our Serv, Descr, Garage, Decks */
+.left-side {
+	width: 570px;
+	padding-top: 67px;
+	margin-left:50px;
+	float: left;
+}
+/* Roofing, Siding, Basement, Concrete Serv  */
+.right-side {
+	width: 570px;
+	padding-top: 61px;
+	float: left;
+}
+
+/* For Services */
+.grid {
+	position: relative;
+	margin: 0 auto;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 30px 30px 0 0;
+	max-width: 255px;
+	max-height: 255px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+
+.grid figure figcaption {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure h2 {
+	font-family: Gilroy;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 120%;
+	text-align: center;
+	letter-spacing: 0.03em;
+	font-feature-settings: 'liga' off;
+	color: #FFFFFF;
+	margin: 0;
+}
+
+.grid figure p {
+	color: #FFFFFF;
+	font-family: Hind;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 140%;
+	text-align: center;
+	margin: 0;
+}
+
+.grid figure a {
+	font-family: Hind;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-top: 17px;
+	text-decoration: none;
+}
+
+figure.effect figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(0deg, rgba(8, 14, 115, 0.8), rgba(8, 14, 115, 0.8));
+	background: linear-gradient(0deg, rgba(8, 14, 115, 0.8), rgba(8, 14, 115, 0.8));
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect h2 {
+	position: absolute;
+	top:  210px;
+	left: 18px;
+	width: 219px;
+	height: 48px;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+/* Text appearance rate */
+figure.effect figcaption::before,
+figure.effect a {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+/* Text appearance rate */
+figure.effect p {
+	-webkit-transition: opacity 0.45s, -webkit-transform 0.45s;
+	transition: opacity 0.45s, transform 0.45s;
+}
+
+figure.effect p {
+	position: absolute;
+	bottom: 60px;
+	top: 210px;
+	left: 0;
+	padding: 1em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect a {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	height: 49px;
+	opacity: 0;
+	background-color: #FF5F1F;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* Hover Effects */
+figure.effect:hover h2 {
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-170px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-170px,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,-173px,0);
+	transform: translate3d(0,-173px,0);
+}
+
+figure.effect:hover figcaption::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0,-5px,0);
+	transform: translate3d(0,-5px,0);
+}
+
+
+figure.effect:hover a {
+	opacity: 1;
+	border-radius: 0 0 5px 5px;
+}
+
+figure.effect:hover img {
+	filter: blur(3px);
+}

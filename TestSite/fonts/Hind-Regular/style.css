@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Hind';
+    src: local('Hind Regular'), local('Hind-Regular'),
+        url('Hind-Regular.woff2') format('woff2'),
+        url('Hind-Regular.woff') format('woff'),
+        url('Hind-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
