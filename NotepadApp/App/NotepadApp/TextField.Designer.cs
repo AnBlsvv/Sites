@@ -111,9 +111,9 @@ namespace NotepadApp
 			this.label1.Font = new System.Drawing.Font("Century Gothic", 20F);
 			this.label1.Location = new System.Drawing.Point(12, 91);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(144, 33);
+			this.label1.Size = new System.Drawing.Size(66, 33);
 			this.label1.TabIndex = 8;
-			this.label1.Text = "Название";
+			this.label1.Text = "Title";
 			this.label1.Click += new System.EventHandler(this.label1_Click);
 			// 
 			// panel1

@@ -17,8 +17,8 @@ namespace NotepadApp
 		public static MySqlConnection GetConnection()
 		{
 			//string sql = "datasource=localhost;port=3306;username=root;password=;database=notepadapp";
-			string sql = "datasource=sql11.freesqldatabase.com;port=3306;username=sql11488134;password=NgIiARD5Vl;database=sql11488134; charset=utf8;";
-			
+			string sql = "datasource=sql11.freesqldatabase.com;port=3306;username=sql11489940;password=kynhupi3T5;database=sql11489940; charset=utf8;";
+
 			MySqlConnection con = new MySqlConnection(sql);
 
 			try
