@@ -1,5 +1,3 @@
 If you are unable to connect to the database, please: 
-1) download a local database to your computer (notepadapp.sql) and change 
-the first line "string sql = " in file "Info.cs" to connect to a local database, or 
-2) change the second line "string sql = " in file "Info.cs" to
-	string sql = "datasource=sql11.freesqldatabase.com;port=3306;username=sql11489940;password=kynhupi3T5;database=sql11489940; charset=utf8;";
+download a local database to your computer (notepadapp.sql) and uncomment (or change) 
+the first line "string sql = " in file "Info.cs" to connect to a local database.
