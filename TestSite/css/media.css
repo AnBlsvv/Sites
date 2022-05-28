@@ -1,0 +1,92 @@
+@media screen and (max-width: 1200px){
+	.main-part{
+		margin: 0 auto;
+		width: 100%;
+		height: 850px;
+	}
+	h1{
+		width: 210px;
+		height: 35px;
+		font-size: 33px;
+		padding-left: 10px; 
+		margin: 0 auto;
+		left: 10px;
+	}
+	p{
+		width: 95%;
+		top: 65px;
+		padding-bottom: 70px;
+		left: 10px;
+	}
+	figure{
+		left: 10px;
+	}
+	figure#fig1 {
+		margin-left: 0px;
+	}
+	.grid {
+		margin: 0 auto;
+		width: 855px;
+	}
+}
+
+@media screen and (max-width: 930px){
+	.main-part{
+		margin: 0 auto;
+		width: 100%;
+		height: 650px;
+	}
+	h1{
+		width: 170px;
+		height: 27px;
+		font-size: 25px; 
+		left: 0;
+	}
+	.grid {
+		width: 560px;
+	}
+	figure{
+		max-width: 154px;
+		max-height: 154px;
+	}
+	figure h2 {
+		font-size: 14px;
+	}
+
+	figure p {
+		font-size: 10px;
+	}
+	figure.effect h2 {
+		top:  125px;
+		left: 0px;
+		width: 150px;
+		height: 20px;
+	}
+	figure.effect p {
+		top: 185px;
+		padding-top: 1em;
+	}
+	figure a {
+		font-size: 10px;
+		padding-top: 4px;
+	}
+	figure.effect a {
+		width: 100%;
+		height: 20px;
+	}
+	figure.effect:hover h2 {
+		-webkit-transform: translate3d(0,-50%,0) translate3d(0,-113px,0);
+		transform: translate3d(0,-50%,0) translate3d(0,-113px,0);
+	}
+}
+
+@media screen and (max-width: 580px){
+	.main-part{
+		margin: 0 auto;
+		width: 100%;
+		height: 900px;
+	}
+	.grid {
+		width: 370px;
+	}
+}
