@@ -1,3 +1,4 @@
-If you are unable to connect to the database, please: 
-download a local database to your computer (notepadapp.sql) and uncomment (or change) 
-the first line "string sql = " in file "Info.cs" to connect to a local database.
+Download a local database (notepadapp.sql). 
+If you can't connect, try changing settings in the first 
+line "string sql = " in file "Info.cs" 
+to connect to a local database.
