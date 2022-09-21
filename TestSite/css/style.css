@@ -133,6 +133,7 @@ body {
 
 /* Our Services */
 h1{
+	position: relative;
 	color: #FFFFFF; 
 	font-family: Gilroy;
 	font-style: normal;
@@ -145,49 +146,27 @@ h1{
 	align-items: center;
 	border-left: 7px solid #FF5F1F; /* Параметры линии */ 
     padding-left: 10px; /* Расстояние от линии до текста */
+    top: 50px;
+    left: 50px;
 }
 
 /* Description */
 p{
+	position: relative;
 	color: #FFFFFF; 
 	font-family: 'Hind', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 140%;
-	font-feature-settings: 'pnum' on, 'lnum' on;
-	margin-top: 35px;
-	margin-bottom: 50px;
 	width: 540px;
-	height: 150px;
 	float: left;
 	padding-right: 20px;
+	top: 90px;
+	left: 50px;
 }
 
-/* Our Serv, Descr, Garage, Decks */
-.left-side {
-	width: 570px;
-	padding-top: 67px;
-	margin-left:50px;
-	float: left;
-}
-/* Roofing, Siding, Basement, Concrete Serv  */
-.right-side {
-	width: 570px;
-	padding-top: 61px;
-	float: left;
-}
-
-/* For Services */
-.grid {
-	position: relative;
-	margin: 0 auto;
-	max-width: 100%;
-	list-style: none;
-	text-align: center;
-}
-
-.grid figure {
+figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -197,9 +176,10 @@ p{
 	text-align: center;
 	cursor: pointer;
 	border-radius: 5px;
+	left: 50px;
 }
 
-.grid figure img {
+figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
@@ -207,17 +187,17 @@ p{
 	opacity: 1;
 }
 
-.grid figure figcaption {
+figure figcaption {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+figure figcaption::before,
+figure figcaption::after {
 	pointer-events: none;
 }
 
-.grid figure h2 {
+figure h2 {
 	font-family: Gilroy;
 	font-style: normal;
 	font-weight: bold;
@@ -230,7 +210,7 @@ p{
 	margin: 0;
 }
 
-.grid figure p {
+figure p {
 	color: #FFFFFF;
 	font-family: Hind;
 	font-style: normal;
@@ -241,7 +221,7 @@ p{
 	margin: 0;
 }
 
-.grid figure a {
+figure a {
 	font-family: Hind;
 	font-style: normal;
 	font-weight: bold;
@@ -345,4 +325,8 @@ figure.effect:hover a {
 
 figure.effect:hover img {
 	filter: blur(3px);
+}
+
+figure#fig1 {
+	margin-left: 30px;
 }
