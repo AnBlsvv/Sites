@@ -259,6 +259,7 @@ input[type="checkbox"]:checked + label:after {
 
 img {
 	width: 18vw;
+	max-width: 335px;
 }
 
 .img-left {
@@ -349,7 +350,7 @@ img {
 -----------------*/
 @media (min-width: 1600px) {
 	.bg {
-		height: 630px;
+		height: 688px;
 	}
 }
 
