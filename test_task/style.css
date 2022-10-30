@@ -238,7 +238,6 @@ input[type="checkbox"]:checked + label:after {
 
 .bg {
 	width: 100%;
-	background-color: white;
 	background: url(img/background.png) no-repeat center center;
     text-align: center;
     font-family: 'Gilroy';
@@ -348,6 +347,12 @@ img {
 /*-----------------
 	Media
 -----------------*/
+@media (min-width: 1600px) {
+	.bg {
+		height: 630px;
+	}
+}
+
 @media (max-width: 1600px) {
 	.bg h2 {
 		font-size: 75px;
