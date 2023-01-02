@@ -35,205 +35,6 @@ p {
 }
 
 /*-----------------
-	Checkbox
------------------*/
-/* убираем не стилизованные метки */
-input[type="checkbox"]:checked, 
-input[type="checkbox"]:not(:checked)
-{
-    position: absolute;
-    left: -9999px;
-}
-
-input[type="checkbox"]:checked + label, 
-input[type="checkbox"]:not(:checked) + label {
-    display: inline-block;
-    position: relative;
-    padding-left: 28px;
-    padding-bottom: 10px;
-    line-height: 20px;
-    cursor: pointer;
-}
-
-/* добавим стилизованные контейнеры */
-input[type="checkbox"]:checked + label:before, 
-input[type="checkbox"]:not(:checked) + label:before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #dddddd;
-    border-radius: 5px;
-    background-color: #ffffff;
-}
-
-/* Добавим анимацию появления */
-input[type="checkbox"]:checked + label:after, 
-input[type="checkbox"]:not(:checked) + label:after{
-    content: "";
-    position: absolute;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-}
-
-/* Меняем обычную галочку на стилизованную */
-input[type="checkbox"]:checked + label:after, 
-input[type="checkbox"]:not(:checked) + label:after {
-    left: 5px;
-    top: 5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #e145a3;
-}
-
-/* Скрываем индикатор выбора, если он не выбран */
-input[type="checkbox"]:not(:checked) + label:after {
-    opacity: 0;
-}
-/* Показываем его, если пользователь выбрал */
-input[type="checkbox"]:checked + label:after {
-    opacity: 1;
-}
-
-/*--------------------
-	Call Back Button
---------------------*/
-
-.button {
-	display: inline-block;
-	border: 2px solid #000;
-	border-radius: 50px;
-	padding: 20px 30px;
-	font-family: sans-serif;
-	text-transform: uppercase;
-	color: #000;
-	cursor: pointer;
-	transition: border-color 0.5s, background-color 0.5s, color 0.5s;
-	text-decoration: none;
-}
-
-.button:hover {
-	background-color: #fff;
-	border-color: transparent;
-	color: #e145a3;
-}
-
-/*-----------------
-	PopUp
------------------*/
-#popup1 .button {
-	border: 2px solid #fff;
-	color: #fff;
-}
-
-#popup1 .button:hover {
-	color: #e145a3;
-}
-
-.overlay {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #000;
-	transition: opacity 500ms;
-	visibility: hidden;
-	opacity: 0;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay:target {
-	visibility: visible;
-	opacity: 1;
-	z-index: 1;
-}
-
-#popup1 .close {
-	position: absolute;
-	top: 20px;
-	right: 30px;
-	transition: all 200ms;
-	font-size: 30px;
-	font-weight: bold;
-	text-decoration: none;
-	color: #fff;
-}
-.popup .close:hover {
- 	color: #e145a3;
-}
-
-/*-----------------
-	Mixer
------------------*/
-.filterDiv {  
-	background-color: #fff;
-	color: #000;
-	width: 100%;
-	line-height: 100px;
-	text-align: center;
-	margin: 10px 0px;
-	display: none;
-	border-radius: 5px;
-}
-
-#filterButtons button {
-	float: left;
-}
-
-#filterButtons:after {
-	content: "";
-    clear: both;
-    display: table;
-}
-
-.show {
-	display: block;
-}
-
-.content {
-	margin-top: 20px;
-	overflow: hidden;
-}
-
-/* Стиль кнопок */
-.btn {
-	width: 50%;
-	border: none;
-	outline: none;
-	padding: 12px 30px;
-	background-color: #fff;
-	cursor: pointer;
-	border-radius: 0px;
-}
-
-.left {
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-}
-.right {
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
-.btn:hover {
- 	background-color: #ddd;
-}
-
-.btn.active {
-	background-color: #e145a3;
-	color: white;
-	box-shadow: none;
-}
-
-/*-----------------
 	Ads Banner
 -----------------*/
 
@@ -291,7 +92,7 @@ img {
 	color: #000;
 }
 
-.gift, .gift:hover, .rotate, .rotate:hover, #history, #history:hover, .bg button {
+.gift, .gift:hover, .rotate, .rotate:hover, #story, #story:hover, .bg button {
 	position: absolute;
 	text-decoration: none;
 }
@@ -322,7 +123,7 @@ img {
 	transform: rotate(-15deg);
 }
 
-#history, #history:hover {
+#story, #story:hover {
 	background: url(img/vector.png) no-repeat center center;
 	width: 135px;
 	height: 140px;
@@ -420,7 +221,7 @@ img {
 		height: 600px;
 	}
 
-	#history, #history:hover {
+	#story, #story:hover {
 		display: none;
 	}
 
